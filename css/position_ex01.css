@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: #333;
+}
 body > h2{
     width: 1000px;
     margin: auto;
@@ -15,7 +18,7 @@ body > h2{
 
 .contents{
     width: 1000px;
-    margin: auto;
+    margin: 0 auto 20px;
     display: flex;
     gap: 10px;
 }
@@ -64,4 +67,58 @@ overflow: hidden;
 }
 .content button:hover{
     background-color: #d83131;
+}
+
+/* 디자인 영역 */
+.musicalwrap{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.musical-card{
+    width: calc(100%/4);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.ticketimg img{
+    width: 100%;
+    display: block;
+}
+
+/* 이미지 위에 랭킹 */
+.ticketimg{
+    height: 380px;
+    position: relative;
+ 
+}
+.img-bg{
+    width: 100% ;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+       background: linear-gradient(180deg, transparent 70%, rgba(0,0,0,0.3));
+}
+
+.ticketrank{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.ticketinfo{
+    padding: 10px;
+}
+.ticketinfo h3{
+margin-bottom: 15px;
+}
+.ticketsale {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ef3e43;
+    margin-top: 15px;
+    display: inline-block;
 }
