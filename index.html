@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position 웹 요소의 위치 저장하기</title>
+    <style>
+      .box {
+        position: absolute;
+        top: 100px;
+        right: -30px;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+      .section{
+        width: 400px;
+        height: 500px;
+        background-color: bisque ;
+        position: relative;
+        left: 200px;
+      }
+      .gotop{
+        width: 100px;
+        height: 30px;
+text-align: center;
+line-height: 30px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: aqua;
+        border-radius: 10px;
+      }
+      header{
+        position: fixed;
+     top: 0;
+     left: 0;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        background-color: moccasin;
+        z-index: 999;
+      }
+      .wrap{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: orangered;
+      }
+      .wrap p{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header> (/¯◡‿◡)/¯✧·˚ : *✧·˚ : * 상단 ☆.。.:*・°☆ ｡+.｡☆ﾟ:;｡+ﾟ†_(′▽`*)β</header>
+    <div class="box"></div>
+    <h1>야호야호</h1>
+
+    <div class="section">
+        <div class="box"></div>
+    </div>
+    <div class="gotop">
+        위로가기🔼
+    </div>
+    <div class="wrap">
+        <p>new</p>
+    </div>
+  </body>
+</html>
